@@ -3,6 +3,7 @@ require 'thread'
 # https://github.com/puppeteer/puppeteer/blob/master/lib/LifecycleWatcher.js
 class Puppeteer::LifecycleWatcher
   include Puppeteer::IfPresent
+  include Puppeteer::ConcurrentRubyUtils
 
   class ExpectedLifecycle
     PUPPETEER_TO_PROTOCOL_LIFECYCLE = {

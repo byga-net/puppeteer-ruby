@@ -2,6 +2,7 @@ require_relative './coverage'
 
 class Puppeteer::JSCoverage
   include Puppeteer::Coverage::UtilFunctions
+  include Puppeteer::ConcurrentRubyUtils
 
   class Item
     def initialize(url:, ranges:, text:)

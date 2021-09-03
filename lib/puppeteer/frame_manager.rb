@@ -4,6 +4,7 @@ class Puppeteer::FrameManager
   include Puppeteer::DebugPrint
   include Puppeteer::IfPresent
   include Puppeteer::EventCallbackable
+  include Puppeteer::ConcurrentRubyUtils
   using Puppeteer::DefineAsyncMethod
 
   UTILITY_WORLD_NAME = '__puppeteer_utility_world__'

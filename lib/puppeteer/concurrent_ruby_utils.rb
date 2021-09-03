@@ -77,5 +77,3 @@ module Puppeteer::ConcurrentRubyUtils
     future.extend(ConcurrentPromisesFutureExtension)
   end
 end
-
-include Puppeteer::ConcurrentRubyUtils
