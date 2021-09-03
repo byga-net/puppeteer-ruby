@@ -1,4 +1,5 @@
 class Puppeteer::EmulationManager
+  include Puppeteer::ConcurrentRubyUtils
   using Puppeteer::DefineAsyncMethod
 
   # @param {!Puppeteer.CDPSession} client

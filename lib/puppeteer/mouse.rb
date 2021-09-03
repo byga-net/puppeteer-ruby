@@ -1,4 +1,5 @@
 class Puppeteer::Mouse
+  include Puppeteer::ConcurrentRubyUtils
   using Puppeteer::DefineAsyncMethod
 
   module Button

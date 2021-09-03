@@ -11,6 +11,7 @@ class Puppeteer::Page
   include Puppeteer::DebugPrint
   include Puppeteer::EventCallbackable
   include Puppeteer::IfPresent
+  include Puppeteer::ConcurrentRubyUtils
   using Puppeteer::DefineAsyncMethod
 
   # @param {!Puppeteer.CDPSession} client

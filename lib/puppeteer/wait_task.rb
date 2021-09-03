@@ -1,4 +1,5 @@
 class Puppeteer::WaitTask
+  include Puppeteer::ConcurrentRubyUtils
   using Puppeteer::DefineAsyncMethod
 
   class TerminatedError < StandardError; end

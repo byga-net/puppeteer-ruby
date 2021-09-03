@@ -1,6 +1,7 @@
 class Puppeteer::CDPSession
   include Puppeteer::DebugPrint
   include Puppeteer::EventCallbackable
+  include Puppeteer::ConcurrentRubyUtils
   using Puppeteer::DefineAsyncMethod
 
   class Error < StandardError; end

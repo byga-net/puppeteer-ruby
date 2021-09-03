@@ -5,6 +5,7 @@ require_relative './element_handle/point'
 class Puppeteer::ElementHandle < Puppeteer::JSHandle
   include Puppeteer::DebugPrint
   include Puppeteer::IfPresent
+  include Puppeteer::ConcurrentRubyUtils
   using Puppeteer::DefineAsyncMethod
 
   # @param context [Puppeteer::ExecutionContext]

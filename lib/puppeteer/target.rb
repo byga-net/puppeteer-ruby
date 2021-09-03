@@ -1,5 +1,7 @@
 # https://github.com/puppeteer/puppeteer/blob/master/lib/Target.js
 class Puppeteer::Target
+  include Puppeteer::ConcurrentRubyUtils
+
   class TargetInfo
     def initialize(options)
       @target_id = options['targetId']

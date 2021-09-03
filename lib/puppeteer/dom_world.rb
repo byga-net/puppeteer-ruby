@@ -2,6 +2,7 @@ require 'thread'
 
 # https://github.com/puppeteer/puppeteer/blob/master/src/DOMWorld.js
 class Puppeteer::DOMWorld
+  include Puppeteer::ConcurrentRubyUtils
   using Puppeteer::DefineAsyncMethod
 
   class BindingFunction

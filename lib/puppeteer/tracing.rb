@@ -1,4 +1,6 @@
 class Puppeteer::Tracing
+  include Puppeteer::ConcurrentRubyUtils
+
   # @param client [Puppeteer::CDPSession]
   def initialize(client)
     @client = client

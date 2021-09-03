@@ -1,4 +1,6 @@
 class Puppeteer::AriaQueryHandler
+  include Puppeteer::ConcurrentRubyUtils
+
   private def normalize(value)
     value.gsub(/ +/, ' ').strip
   end

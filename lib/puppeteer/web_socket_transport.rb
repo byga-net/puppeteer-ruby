@@ -1,4 +1,6 @@
 class Puppeteer::WebSocketTransport
+  include Puppeteer::ConcurrentRubyUtils
+
   # @param {string} url
   # @return [Puppeteer::WebSocketTransport]
   def self.create(url)

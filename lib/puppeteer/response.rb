@@ -2,6 +2,7 @@ require 'json'
 
 class Puppeteer::Response
   include Puppeteer::IfPresent
+  include Puppeteer::ConcurrentRubyUtils
 
   class Redirected < StandardError
     def initialize
