@@ -1,5 +1,5 @@
 class Puppeteer::WebSocketTransport
-  include Puppeteer::ConcurrentRubyUtils
+  extend Puppeteer::ConcurrentRubyUtils
 
   # @param {string} url
   # @return [Puppeteer::WebSocketTransport]
